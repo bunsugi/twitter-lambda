@@ -1,0 +1,25 @@
+{
+  "name": "twitter-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ay-sugiura/twitter-lambda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ay-sugiura/twitter-lambda/issues"
+  },
+  "homepage": "https://github.com/ay-sugiura/twitter-lambda#readme",
+  "dependencies": {
+    "@aws-sdk/client-sns": "^3.95.0",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "prettier": "^2.6.2"
+  }
+}
