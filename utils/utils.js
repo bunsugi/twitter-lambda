@@ -21,6 +21,9 @@ module.exports.getTweetCount = async (startTime, endTime, query) => {
     const granularity = "day";
     const token = process.env.TOKEN;
 
+    console.log(`startTime:${startTime}`)
+    console.log(`endTime:${endTime}`)
+    
     const req = encodeURI(
         `${url}?query=${query}&start_time=${startTime}&end_time=${endTime}&granularity=${granularity}`
     );

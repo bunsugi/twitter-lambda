@@ -22,24 +22,20 @@ const index = async () => {
     const todayCount = todayData.data[0].tweet_count;
     const yesterdayCount = yesterdayData.data[0].tweet_count;
 
+    
     console.log(`今日のカウント：${todayCount}`);
     console.log(`昨日のカウント：${yesterdayCount}`);
 
     if (yesterdayCount !== 0) {
         const growthRate = todayCount / yesterdayCount;
-        if (growthRate > 2) {
+        if (growthRate > 5) {
             await sns(todayCount, yesterdayCount);
         }
         return growthRate;
     } else {
-        return todayCount > 100;
+        return 0;
     }
 };
 
 module.exports.handler = index;
 
-// 昨日の日付
-// .env
-// ENCODE
-// 時刻が直前すぎると取れない
-// toISOString
